@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.temre.appx.MainActivity">
+
+
+    <TextView
+        android:id="@+id/rmCmp"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="21dp"
+        android:text="compansation"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rmVc"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/rmVc" />
+
+    <TextView
+        android:id="@+id/rmV"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintLeft_toRightOf="@+id/rmC"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rmVc" />
+
+    <TextView
+        android:id="@+id/rmC"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="122dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rmV"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Spinner
+        android:id="@+id/ExcuseSpinner"
+        android:layout_width="268dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ExcuseTextView" />
+
+    <TextView
+        android:id="@+id/ExcuseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:text="Excuse"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/TotalPerms" />
+
+    <Button
+        android:id="@+id/SendPermission"
+        android:layout_width="95dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="280dp"
+        android:text="Request"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="RtlHardcoded"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/rmV" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="174dp"
+        android:id="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="152dp">
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/TotalDayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Number of days in the interval"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/et" />
+
+    <EditText
+        android:id="@+id/TotalPerms"
+        android:layout_width="111dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TotalDayText" />
+
+    <Button
+        android:id="@+id/startDateButton"
+        android:layout_width="37dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:text="S.D."
+        android:textSize="7sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/sd" />
+
+    <TextView
+        android:id="@+id/sd"
+        android:layout_width="89dp"
+        android:layout_height="19dp"
+        android:layout_marginRight="48dp"
+        android:text="Start Date"
+        app:layout_constraintRight_toLeftOf="@+id/startTimeButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/startTimeButton" />
+
+    <Button
+        android:id="@+id/endDateButton"
+        android:layout_width="37dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:text="E.D."
+        android:textSize="7sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ed"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ed" />
+
+    <TextView
+        android:id="@+id/ed"
+        android:layout_width="89dp"
+        android:layout_height="19dp"
+        android:layout_marginRight="48dp"
+        android:text="End Date"
+        app:layout_constraintRight_toLeftOf="@+id/endTimeButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/endTimeButton" />
+
+    <Button
+        android:id="@+id/startTimeButton"
+        android:layout_width="37dp"
+        android:layout_height="31dp"
+        android:layout_marginRight="31dp"
+        android:text="S.T."
+        android:textSize="7sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/st"
+        app:layout_constraintRight_toLeftOf="@+id/st" />
+
+    <Button
+        android:id="@+id/endTimeButton"
+        android:layout_width="37dp"
+        android:layout_height="31dp"
+        android:layout_marginRight="31dp"
+        android:text="E.T."
+        android:textSize="7sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et"
+        app:layout_constraintRight_toLeftOf="@+id/et" />
+
+    <TextView
+        android:id="@+id/st"
+        android:layout_width="89dp"
+        android:layout_height="19dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="35dp"
+        android:text="Start Time"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/et"
+        android:layout_width="89dp"
+        android:layout_height="19dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="End Time"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/st" />
+
+    <TextView
+        android:id="@+id/rmVc"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="57dp"
+        android:text="Vacation"
+        android:textSize="10sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ExcuseSpinner" />
+
+</android.support.constraint.ConstraintLayout>
